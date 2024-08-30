@@ -1,5 +1,8 @@
 # AngularMobileShop
 
+## Install dependencies
+Run `npm install --force` or Run `npm install --force --allow-dirty`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
 ## Development server
