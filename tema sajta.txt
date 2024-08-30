@@ -1,0 +1,25 @@
+tema sajta je prodavnica telefona
+funkcionalnosti:
+-pretraga/filtracija telefona
+-dodavanje u korpu
+-menjanje kolicine proizvoda u korpi
+-brisanje korpe
+-order dugme
+
+lokacija json file:src/assets/data/store.json
+JSON Objekat jednog telefona:
+
+{
+      "id": 0,
+      "model_id": 0,
+      "storage_option_ids": [1, 2],
+      "color_ids": [0, 1],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-09-24",
+      "prices": [799, 899],
+      "image":"iphone13.jpg"
+}
+
+svi "foreign keys" osim model je nesto kao many to many relationship
+prices je niz cena koje bi u realnoj situaciji bile organizovane po datumu
+i uzimala bi se najnovija, ali se ovde uzima prva

@@ -1,0 +1,262 @@
+{
+  "brands": [
+    {
+      "id": 0,
+      "name": "Apple"
+    },
+    {
+      "id": 1,
+      "name": "Samsung"
+    },
+    {
+      "id": 2,
+      "name": "Google"
+    },
+    {
+      "id": 3,
+      "name": "OnePlus"
+    },
+    {
+      "id": 4,
+      "name": "Xiaomi"
+    },
+    {
+      "id": 5,
+      "name": "Huawei"
+    }
+  ],
+  "models": [
+    {
+      "id": 0,
+      "name": "iPhone 13",
+      "brand_id": 0
+    },
+    {
+      "id": 1,
+      "name": "iPhone 13 Pro",
+      "brand_id": 0
+    },
+    {
+      "id": 2,
+      "name": "Galaxy S21",
+      "brand_id": 1
+    },
+    {
+      "id": 3,
+      "name": "Galaxy S21 Ultra",
+      "brand_id": 1
+    },
+    {
+      "id": 4,
+      "name": "Pixel 6",
+      "brand_id": 2
+    },
+    {
+      "id": 5,
+      "name": "Pixel 6 Pro",
+      "brand_id": 2
+    },
+    {
+      "id": 6,
+      "name": "OnePlus 9",
+      "brand_id": 3
+    },
+    {
+      "id": 7,
+      "name": "OnePlus 9 Pro",
+      "brand_id": 3
+    },
+    {
+      "id": 8,
+      "name": "Mi 11",
+      "brand_id": 4
+    },
+    {
+      "id": 9,
+      "name": "Mi 11 Ultra",
+      "brand_id": 4
+    },
+    {
+      "id": 10,
+      "name": "P50",
+      "brand_id": 5
+    },
+    {
+      "id": 11,
+      "name": "P50 Pro",
+      "brand_id": 5
+    }
+  ],
+  "storage_options": [
+    {
+      "id": 0,
+      "name": "64GB"
+    },
+    {
+      "id": 1,
+      "name": "128GB"
+    },
+    {
+      "id": 2,
+      "name": "256GB"
+    },
+    {
+      "id": 3,
+      "name": "512GB"
+    }
+  ],
+  "colors": [
+    {
+      "id": 0,
+      "name": "Black"
+    },
+    {
+      "id": 1,
+      "name": "White"
+    },
+    {
+      "id": 2,
+      "name": "Blue"
+    },
+    {
+      "id": 3,
+      "name": "Red"
+    },
+    {
+      "id": 4,
+      "name": "Green"
+    }
+  ],
+  "connectivity": [
+    {
+      "id": 0,
+      "name": "4G"
+    },
+    {
+      "id": 1,
+      "name": "5G"
+    }
+  ],
+  "mobiles": [
+    {
+      "id": 0,
+      "model_id": 0,
+      "storage_option_ids": [1, 2],
+      "color_ids": [0, 1],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-09-24",
+      "prices": [799, 899],
+      "image":"iphone13.jpg"
+    },
+    {
+      "id": 1,
+      "model_id": 1,
+      "storage_option_ids": [2, 3],
+      "color_ids": [1, 2],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-09-24",
+      "prices": [999, 1099],
+      "image":"iphone13pro.jpg"
+    },
+    {
+      "id": 2,
+      "model_id": 2,
+      "storage_option_ids": [0, 2],
+      "color_ids": [2, 3],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-01-29",
+      "prices": [799, 899],
+      "image":"galaxys21.jpg"
+    },
+    {
+      "id": 3,
+      "model_id": 3,
+      "storage_option_ids": [1, 3],
+      "color_ids": [0, 1],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-01-29",
+      "prices": [1199, 1299],
+      "image":"galaxys21.jpg"
+    },
+    {
+      "id": 4,
+      "model_id": 4,
+      "storage_option_ids": [1, 2],
+      "color_ids": [3, 4],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-10-28",
+      "prices": [699, 799],
+      "image":"pixel6.jpg"
+    },
+    {
+      "id": 5,
+      "model_id": 5,
+      "storage_option_ids": [0, 3],
+      "color_ids": [4, 0],
+      "connectivity_ids": [0],
+      "release_date": "2021-10-28",
+      "prices": [899, 999],
+      "image":"pixel6.jpg"
+    },
+    {
+      "id": 6,
+      "model_id": 6,
+      "storage_option_ids": [0, 2],
+      "color_ids": [0, 1],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-03-23",
+      "prices": [729, 829],
+      "image":"oneplus9.jpg"
+    },
+    {
+      "id": 7,
+      "model_id": 7,
+      "storage_option_ids": [2, 3],
+      "color_ids": [2, 3],
+      "connectivity_ids": [0],
+      "release_date": "2021-03-23",
+      "prices": [1069, 1169],
+      "image":"oneplus9.jpg"
+    },
+    {
+      "id": 8,
+      "model_id": 8,
+      "storage_option_ids": [1, 2],
+      "color_ids": [3, 4],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-01-01",
+      "prices": [749, 849],
+      "image":"mi11.jpg"
+    },
+    {
+      "id": 9,
+      "model_id": 9,
+      "storage_option_ids": [2, 3],
+      "color_ids": [1, 2],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-01-01",
+      "prices": [999, 1099],
+      "image":"mi11.jpg"
+    },
+    {
+      "id": 10,
+      "model_id": 10,
+      "storage_option_ids": [1, 2],
+      "color_ids": [0, 1],
+      "connectivity_ids": [0],
+      "release_date": "2021-08-12",
+      "prices": [699, 799],
+      "image":"p50.jpg"
+    },
+    {
+      "id": 11,
+      "model_id": 11,
+      "storage_option_ids": [2, 3],
+      "color_ids": [1, 2],
+      "connectivity_ids": [0, 1],
+      "release_date": "2021-08-12",
+      "prices": [899, 999],
+      "image":"p50.jpg"
+    }
+  ]
+}

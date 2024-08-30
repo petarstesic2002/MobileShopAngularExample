@@ -1,0 +1,58 @@
+<div class="ms-5">
+  <div class="form-group mt-3">
+    <label class="fw-bold">Brands</label>
+    <select class="form-select brand" (change)="filter($event)">
+      <option value="-1" selected>Select...</option>
+      <option *ngFor="let brand of brands" [value]="brand.id">{{brand.name}}</option>
+    </select>
+  </div>
+  <div class="form-group mt-3">
+    <label class="fw-bold">Models</label>
+    <div *ngIf="modelsByBrand.length>0; else modelElseBlock">
+      <div  *ngFor="let model of modelsByBrand" class="form-check">
+        <input class="form-check-input cbModel" type="checkbox" [value]="model.id" (change)="filter($event)">
+        <label class="form-check-label">
+          {{model.name}}
+        </label>
+      </div>
+    </div>
+  </div>
+  <ng-template #modelElseBlock>
+    <div  *ngFor="let model of models" class="form-check">
+      <input class="form-check-input cbModel" type="checkbox" [value]="model.id" (change)="filter($event)">
+      <label class="form-check-label">
+        {{model.name}}
+      </label>
+    </div>
+  </ng-template>
+  <div class="form-group mt-3">
+    <label class="fw-bold">Colors</label>
+    <div *ngFor="let color of colors" class="form-check">
+      <input class="form-check-input cbColor" type="checkbox" [value]="color.id" (change)="filter($event)">
+      <label class="form-check-label">
+        {{color.name}}
+      </label>
+    </div>
+  </div>
+  <div class="form-group mt-3">
+    <label class="fw-bold">Connectivities</label>
+    <div *ngFor="let conn of connectivities" class="form-check">
+      <input class="form-check-input cbConn" type="checkbox" [value]="conn.id" (change)="filter($event)">
+      <label class="form-check-label">
+        {{conn.name}}
+      </label>
+    </div>
+  </div>
+  <div class="form-group mt-3">
+    <label class="fw-bold">Storage Options</label>
+    <div *ngFor="let so of storages" class="form-check">
+      <input class="form-check-input cbStorage" type="checkbox" [value]="so.id" (change)="filter($event)">
+      <label class="form-check-label">
+        {{so.name}}
+      </label>
+    </div>
+  </div>
+  <div class="form-group mt-3">
+    <input type="button" (click)="startFilter()" class="form-control btn btn-danger" id="filter" value="Show Filtered Results">
+  </div>
+</div>

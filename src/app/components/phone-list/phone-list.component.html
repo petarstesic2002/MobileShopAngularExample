@@ -1,0 +1,15 @@
+<div class="brand-bg">
+  <ng-container *ngIf="mobiles.length>0; else elseTemplate">
+    <div fxLayout="row wrap">
+      <app-phone-card fxFlex="33%" fxLayoutAlign="center center" *ngFor="let mobile of mobiles" [mobile]="mobile"></app-phone-card>
+    </div>
+    <div class="mt-4 d-flex" fxLayoutAlign="center center">
+      <button type="button" class="btn btn-danger mx-1" (click)="prevPage()" [disabled]="currentPage === 1">Prev</button>
+      <button type="button" class="btn btn-danger mx-1" (click)="nextPage()"
+          [disabled]="currentPage === totalPages">Next</button>
+    </div>
+  </ng-container>
+  <ng-template #elseTemplate>
+      <h1 style="color: white; margin-top: 50px">No results found.</h1>
+  </ng-template>
+</div>

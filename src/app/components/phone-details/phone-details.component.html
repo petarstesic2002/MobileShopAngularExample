@@ -1,0 +1,43 @@
+<!-- <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 margin mt-4">
+  <div class="brand_box text-center">
+      <img class="card-img-top" width="auto" [src]='"../../../assets/images/phones/"+item.image' [alt]="item.image" />
+      <h3>$<strong class="red">{{item.prices[0]}}</strong></h3>
+      <span class="fw-bold">{{getBrand(item.model_id,data)}}</span>
+      <span>{{getModel(item.model_id,data)}}</span><br/>
+      <button (click)="addToCart()" class="btn btn-danger mt-3">Add To Cart</button>
+  </div>
+</div> -->
+<div fxLayout="row" fxLayoutAlign="center center">
+<div class="card m-3" style="max-width: 1500px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img [src]='"../../../assets/images/phones/"+item.image' [alt]="item.image" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{getBrand(item.model_id,data)}} {{getModel(item.model_id,data)}}</h5>
+        <label>Choose Color</label>
+        <select class="ddColor form-select mb-3" (change)="ddChange($event)">
+          <option *ngFor="let clr of getColors(item.color_ids,data)" [value]="clr">
+            {{clr}}
+          </option>
+        </select>
+        <label>Choose Storage Size</label>
+        <select class="ddStorage form-select mb-3" (change)="ddChange($event)">
+          <option *ngFor="let storage of getStorages(item.storage_option_ids,data)" [value]="storage">
+            {{storage}}
+          </option>
+        </select>
+        <label>Choose Connectivity</label>
+        <select class="ddConn form-select mb-3" (change)="ddChange($event)">
+          <option *ngFor="let conn of getConnectivities(item.connectivity_ids,data)" [value]="conn">
+            {{conn}}
+          </option>
+        </select>
+        <button (click)="addToCart()" class="btn {{buttonClass}}">{{message}}</button>
+        <p class="card-text"><small class="text-body-secondary">Release Date: {{item.release_date}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
